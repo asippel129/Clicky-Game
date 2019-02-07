@@ -15,7 +15,7 @@ class App extends Component {
     score: 0
   };
 
-//when you click on a card ... the office character is taken out of the array
+//when a card is clicked, the office character is taken out of the array
   imageClick = event => {
     const currentChar = event.target.alt;
     const CharAlreadyClicked =
@@ -32,7 +32,7 @@ class App extends Component {
       });
         alert("You lose. Play again?");
 
-//if you click on an available characters, your score is increased and cards reordered
+//if you click on an available characters, your score is increased and cards reordered THIS STILL NEEDS WORK
     } else {
       this.setState(
         {
